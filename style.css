@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(0deg , #3a6cf4 , #f0f0f0);
+    border-bottom: 2px double #000016;
+}
+.header-left{
+    width: calc(30% - 10px);
+    float: left;
+}
+.logo{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+}
+#logo1{
+    font-size: 25px;
+    color: #3a6cf4;
+}
+#logo2{
+    font-size: 30px;
+    color: #f0f0f0;
+}
+.header-right{
+    width: calc(70% - 10px);
+    float: right;
+    border-left: 2px solid #000016;
+}
+.divicons{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.divicons img{
+    width: 45px;
+    height: 45px;
+}
+body{
+    animation: bgmain 5s 0s infinite;
+}
+main{
+    min-height: 650px;
+    width: 80%;
+    float: right;
+}
+#code-editor{
+    width: 100%;
+}
+.article-title{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    color: #f0f0f0;
+}
+.btn-codes{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px 0px;
+}
+.btn-code{
+    width: calc(90% / 4);
+    height: 50px;
+    border-radius: 10px 0px;
+    color: #000016;
+    font-size: 25px;
+}
+.topcode{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+.btn-code-btn{
+    height: 70px;
+}
+.div-text{
+    display: flex;
+    justify-content: center;
+}
+#code{
+    width: 90%;
+    min-height: 450px;
+    padding: 50px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-weight: 800;
+    background: #ffffff6b;
+    cursor: pointer;
+    position: relative;
+}
+#code-view{
+    background-color: #f0f0f0;
+    color: #000016;
+    width: 72%;
+    padding: 10px;
+    max-width: 100% !important;
+    min-height: 450px;
+    max-height: fit-content;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+}
+aside{
+    background-image: linear-gradient(180deg , #3a6cf4 ,#000016 );
+    width: 20%;
+    min-height: 650px;
+    float: left;
+    background-color: #f0f0f0;
+}
+.aside-title{
+    width: 100%;
+    font-size: 40px;
+    min-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #f0f0f0;
+    text-shadow: 1px 1px #000016;
+}
+.aside-divtitle{
+    font-weight: 800;
+    color: #f0f0f0;
+    min-height: 30px;
+    font-size: 30px;
+    text-shadow: 1px 1px #000016;
+}
+.divlang{
+    width: 100%;
+    text-align: center;
+    min-height: 100px;
+}
+.divmood{
+    width: 100%;
+    text-align: center;
+    min-height: 100px;
+}
+.div-color{
+    width: 100%;
+    text-align: center;
+    min-height: 100px;
+}
+aside select{
+    width: 75%;
+    min-height: 70px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.aside-divbtn{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+}
+.sitting-btn{
+    width: 200px;
+    min-height: fit-content;
+    height: 80px;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    text-align: center;
+    border-radius: 20px 0px;
+    font-weight: 600;
+    font-size: 30px;
+}
+footer{
+    height: 75px;
+    width: 100%;
+    background-color: #000016;
+    color: #fff;
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    z-index: 1;
+}
+.footer-title{
+    width: 100%;
+    display: inline-block;
+    color: #f0f0f0;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.footer-title span {
+    color: #3a6cf4;
+}
+@keyframes bgmain {
+    0%{
+        background-image: linear-gradient(180deg , #3a6cf4 25%, #000016 75%);
+    }
+    25%{
+        background-image: linear-gradient(to left , #3a6cf4 50%, #000016 50%);
+    }
+    50%{
+        background-image: linear-gradient(180deg , #000016 25%, #3a6cf4 75%);
+    }
+    100%{
+        background-image: linear-gradient(to right , #3a6cf4 50%,#000016 50%);
+    }
+}

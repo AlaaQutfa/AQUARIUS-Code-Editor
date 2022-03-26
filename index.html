@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AQUARIUS | Code-Editor:</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <p id="logo1" class="logo"> AQUARIUS </p> 
+                <p id="logo2" class="logo"> CODE-EDITOR </p>
+            </div>
+            <nav class="header-right">
+                <div class="divicons">
+                    <h1 id="contact">
+                        Contact us: 
+                    </h1>
+                    <span>
+                        <a href="https://www.facebook.com/aloosh2712000"><img src="icons/facebook.png" /></a>
+                    </span>
+                    <span>
+                        <a href="https://www.twitter.com/aloosh2712000"><img src="icons/twitter.png" /></a>
+                    </span>
+                    <span>
+                        <a href="https://www.instagram.com/aloosh2712000/"><img src="icons/instagram.png" /></a>
+                    </span>
+                    <span>
+                        <a href="https://www.github.com/AlaaQutfa/"><img src="icons/github.png" /></a>
+                    </span>
+                    <span>
+                        <a href="https://www.youtube.com/channel/UCZSSiLAUdyBpaq5ZuAZsOzQ"><img src="icons/youtube.png" /></a>
+                    </span>
+                    <span>
+                        <a href="mailto: contactaloosh2712000@gmail.com"><img src="icons/mail.png" /></a>
+                    </span>
+                    <span>
+                        <a href="https://linkedin.com/AlaaQutfa"><img src="icons/linkedin.png" /></a>
+                    </span>
+                </div>
+            </nav>
+            
+        </header>
+        <main id="main">
+            <section id="code-editor">
+                <article>
+                    <h2 id="article-title1" class="title-sections article-title">
+                        Write here: 
+                    </h2>
+                    <div class="topcode">
+                        <button id="btn-code-addelement" class="btn-code btn-code-btn">
+                           Add elements
+                        </button>
+                        <button id="btn-code-clean" class="btn-code btn-code-btn">
+                            Clear All
+                        </button>
+                    </div>
+                    <div class="btn-codes">
+                        <button id="btn-code-return" class="btn-code">
+                            Save
+                        </button>
+                        <button id="btn-code-load" class="btn-code">
+                            Load
+                        </button>
+                        <button id="btn-code-run" class="btn-code">
+                            Result
+                        </button>
+                        <button id="btn-code-delete" class="btn-code">
+                            Return
+                        </button>
+                    </div>
+                    <div class="div-text">
+                        <div id="code-view" style="display: none;"></div>
+                        <textarea name="code" id="code"></textarea>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <h1 id="Settings" class="aside-title">
+                Settings :
+            </h1>
+            <div class="divlang">
+                <h3 class="aside-divtitle" id="Chooselanguage"> Choose language: </h3>
+                <select name="lang" id="lang">
+                    <option id="english" value="english"> English </option>
+                    <option id="arabic" value="arabic"> Arabic </option>
+                    <option id="german" value="german"> German </option>
+                </select>
+            </div>
+            <div class="divmood">
+                <h3 id="Choosemood" class="aside-divtitle"> Choose Mood: </h3>
+                <select name="mood" id="mood">
+                    <option id="darkmood" value="dark"> Dark Mood</option>
+                    <option id="lightmood" value="light"> Light Mood </option>
+                </select>
+            </div>
+            <div class="div-color">
+                <h3 id="Font-color" class="aside-divtitle"> Choose Font-color: </h3>
+                <select name="color" id="color">
+                    <option id="red" value="red"> Red </option>
+                    <option id="blue" value="blue"> Blue </option>
+                    <option id="green" value="green"> Green </option>
+                    <option id="black" value="black"> Black </option>
+                    <option id="white" value="white"> White </option>
+                </select>
+            </div>
+            <div class="div-color">
+                <h3 id="fontsize" class="aside-divtitle"> Choose Font-size: </h3>
+                <select name="size" id="size">
+                    <option id="small" value="small"> Small </option>
+                    <option id="medium" value="medium"> Medium </option>
+                    <option id="large" value="large"> Large </option>
+                </select>
+            </div>
+            <div class="aside-divbtn">
+                <button type="button" id="edit" class="sitting-btn"> Save </button>
+            </div>
+        </aside>
+        <footer>
+            <p class="footer-title">
+                Copyrights @
+                <a href="">
+                    <span>AQUARIUS CODER</span>
+                </a>
+            </p>
+        </footer>
+    <script src="app.js"></script>
+    </body>
+</html>

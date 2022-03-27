@@ -123,7 +123,7 @@ aside{
 }
 .aside-title{
     width: 100%;
-    font-size: 40px;
+    font-size: 35px;
     min-height: 50px;
     font-weight: bold;
     text-align: center;
@@ -198,15 +198,129 @@ footer{
 }
 @keyframes bgmain {
     0%{
-        background-image: linear-gradient(180deg , #3a6cf4 25%, #000016 75%);
+        background-image: linear-gradient(180deg , #3a6cf4 , #000016 );
     }
     25%{
-        background-image: linear-gradient(to left , #3a6cf4 50%, #000016 50%);
+        background-image: linear-gradient(to left , #3a6cf4 , #000016 );
     }
     50%{
-        background-image: linear-gradient(180deg , #000016 25%, #3a6cf4 75%);
+        background-image: linear-gradient(180deg , #000016 , #3a6cf4 );
     }
     100%{
-        background-image: linear-gradient(to right , #3a6cf4 50%,#000016 50%);
+        background-image: linear-gradient(to right , #3a6cf4 ,#000016 );
+    }
+}
+@media screen and (max-width:1150px) {
+    .aside-divtitle{
+        font-size: 20px;
+    }
+    #edit{
+        font-size: 20px;
+        width: 150px;
+    }
+}
+@media screen and (max-width:850px){
+    main{
+        width: 75%;
+        min-height: 615px;
+    }
+    aside{
+        width: 25%;
+        min-height: 615px;
+    }
+    .btn-code{
+        width: calc(90% / 2);
+    }
+    .footer-title{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:710px){
+    #logo1{
+        font-size: 20px;
+    }
+    #logo2{
+        font-size: 25px;
+    }
+    #code{
+        padding: 25px;
+    }
+    .divicons img{
+        width: 30px;
+        height: 30px;
+    }
+    button{
+        font-size: 20px !important;
+    }
+    select{
+        font-size: 20px !important;
+    }
+}
+@media screen and (max-width:660px){
+    header{
+        height: 150px;
+    }
+    .header-left{
+        float: none;
+        width: 100%;
+    }
+    .header-right{
+        float: none;
+        width: 100%;
+        border-top: 2px solid #000016;
+    }
+    .divicons{
+        padding-top: 15px !important;
+    }
+    main{
+        float:none;
+        width: 100%;
+    }
+    aside{
+        float:none;
+        width: 100%;
+        background: none;
+    }
+}
+@media screen and (max-width:400px){
+    .divicons{
+        padding-top: 20px !important;
+        font-size: 15px;
+    }
+    .divicons img{
+        width: 25px;
+        height: 25px;
+    }
+    button{
+        font-size: 15px !important;
+    }
+    footer{
+        max-height: 50px;
+        padding-top: 10px;
+    }
+    .footer-title{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:300px){
+    header{
+        height: 110px;
+    }
+    .divicons{
+        font-size: 10px;
+        padding: 5px !important;
+    }
+    .divicons img{
+        width: 15px;
+        height: 15px;
+    }
+    button{
+        font-size: 10px !important;
+    }
+    #edit{
+        font-size: 20px !important;
+    }
+    .footer-title{
+        font-size: 15px;
     }
 }

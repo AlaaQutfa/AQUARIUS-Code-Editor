@@ -33,6 +33,20 @@ function chlang(){
     let medium=document.getElementById("medium");
     let large=document.getElementById("large");
     if(lang.value == "arabic"){
+        document.head.innerHTML+=`<style>
+        body{
+            direction: rtl;
+        }
+        main{
+            float:left;
+        }
+        #code{
+            direction:ltr;
+        }
+        aside{
+            float:right;
+        }
+        </style>`;
         logo1.innerHTML = "أكواريوس" ;
         logo2.innerHTML = "محرر-اكواد";
         contact.innerHTML= ":تواصل معنا";
@@ -64,6 +78,17 @@ function chlang(){
         clean.innerHTML= "حذف الكل";
     }
     else if(lang.value == "german"){
+        document.head.innerHTML+=`<style>
+        body{
+            direction: ltr;
+        }
+        main{
+            float:right;
+        }
+        aside{
+            float:left;
+        }
+        </style>`;
         logo1.innerHTML = "AQUARIUS" ;
         logo2.innerHTML = "CODE-EDITOR" ;
         contact.innerHTML="kontaktiere uns:" ;
@@ -95,6 +120,17 @@ function chlang(){
         clean.innerHTML= "Alles löschen";
     }
     else{
+        document.head.innerHTML+=`<style>
+        body{
+            direction: ltr;
+        }
+        main{
+            float:right;
+        }
+        aside{
+            float:left;
+        }
+        </style>`;
         logo1.innerHTML = "AQUARIUS" ;
         logo2.innerHTML = "Code-Editor" ;
         contact.innerHTML= "Contact Uc:";

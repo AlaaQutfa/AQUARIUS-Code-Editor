@@ -1,0 +1,39 @@
+Disco {
+  color: #556270;
+  color: #4ecdc4;
+}
+Red_Ocean {
+  color: #1d4350;
+  color: #a43931;
+}
+Deep_Space {
+  color: #000000;
+  color: #434343;
+}
+Vice_City {
+  color: #3494e6;
+  color: #ec6ead;
+}
+Royal {
+  color: #141e30;
+  color: #243b55;
+}
+header {
+  color: #6f0ce8;
+  color: #320cf2;
+  color: #0117db;
+  color: #0c60f2;
+  color: #0c97e8;
+}
+text{
+  color: #0C0024;
+  color: #E3E3FE;
+}
+font1 ar {
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  font-family: 'Amiri', serif;
+}
+font2 en {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  font-family: 'Roboto Slab', serif;
+}

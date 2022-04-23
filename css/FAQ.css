@@ -1,0 +1,21 @@
+.T_aqce{
+  width: 100%;
+}
+.qT_aqce{
+  background-color: #0C0024;
+  color: #E3E3FE;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 1.8em;
+}
+.aT_aqce{
+  background-color: #e3e3fe77;
+  color: #0C0024;
+  font-weight: 800;
+  margin: 5px 0px;
+  font-size: 1.5em;
+}
+.qT_aqce , .aT_aqce{
+  border-radius: 10px;
+  box-shadow: 1px 1px 50px #0117db;
+}

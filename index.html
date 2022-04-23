@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AQUARIUS|Code-Editor:</title>
+    <link rel="icon" href="img/My-Logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/FAQ.css" />
+    <link rel="stylesheet" href="css/About.css" />
+  </head>
+  <body>
+    <div id="alert_start_aqce" class="startdiv_aqce" style="display: block">
+      <div class="startsite-aqce">
+        <div class="logo-img-aqce">
+          <a href="https://aquarius.netlify.app/" target="_blank">
+            <img src="img/MyLogo-HD.png" class="startlogo_img_aqce" />
+          </a>
+        </div>
+        <div class="logo-img-aqce">
+          <button
+            id="histatdiv_aqce"
+            class="menu-btn-aqce histatdiv_btn_aqce"
+            onclick="histart();"
+          >
+            <img src="img/close.png" class="startlogo_imgbtn_aqce" />
+          </button>
+        </div>
+      </div>
+      <div class="list_alertstart_aqce">
+        <ul class="list_ul_alertstart_aqce">
+          <li>
+            EN: Welcome to the AQUARIUS- Code Editor:<br />
+            If you want to change the language or style of the site, pressing on
+            <img src="img/sittings.png" class="alertstart_info_aqce" /><br />
+            You can navigate within the site by pressing on
+            <img src="img/m0.png" class="alertstart_info_aqce" />
+          </li>
+          <li dir="rtl" style="text-align: right">
+            AR: مرحبًا بكم في AQUARIUS- محرر أكواد: <br />
+            إذا كنت تريد تغيير لغة الموقع أو نمطه ، فاضغط على
+            <img src="img/sittings.png" class="alertstart_info_aqce" /> <br />
+            يمكنك التنقل داخل الموقع بالضغط على
+            <img src="img/m0.png" class="alertstart_info_aqce" />
+          </li>
+          <li>
+            GER:DE: Willkommen beim AQUARIUS- Code Editor:<br />
+            Wenn Sie die Sprache oder den Stil der Website ändern möchten,
+            drücken Sie auf
+            <img src="img/sittings.png" class="alertstart_info_aqce" /><br />
+            Sie können innerhalb der Site navigieren, indem Sie auf drücken
+            <img src="img/m0.png" class="alertstart_info_aqce" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main id="app-aqce" style="display: block; opacity: 0.5">
+      <div class="header-aqce">
+        <div class="header-left-aqce">
+          <div class="logo-img-aqce">
+            <a href="https://aquarius.netlify.app/" target="_blank">
+              <img src="img/MyLogo-HD.png" class="logo-aqce" />
+            </a>
+          </div>
+          <div class="logo-text-aqce">
+            <h1 id="AQUARIUS-aqce">AQUARIUS</h1>
+            <h2 id="Code-aqce">Code Editor</h2>
+          </div>
+        </div>
+        <nav class="header-right-aqce">
+          <div id="navbar-aqce" class="navbar-aqce">
+            <div
+              id="move-navbar-aqce"
+              class="navbar-list"
+              style="display: none"
+            >
+              <ul id="list-aqce" style="display: flex">
+                <a href="#section_title1-aqce" onclick="shUSE()">
+                  <li id="nav1-aqce">USE</li>
+                </a>
+                <a href="#section_title2-aqce" onclick="shFAQ()">
+                  <li id="nav2-aqce">FAQ</li>
+                </a>
+                <a href="#section_title3-aqce" onclick="shAbout()">
+                  <li id="nav3-aqce">About</li>
+                </a>
+              </ul>
+            </div>
+            <div id="add-btn-navbar-aqce" class="navbar-btn">
+              <button
+                id="navbar-btn-aqce"
+                class="menu-btn-aqce"
+                style="display: block"
+                onclick="shlist(0);"
+              >
+                <img src="img/m0.png" class="menu-aqce" />
+              </button>
+            </div>
+          </div>
+          <div id="add-btn-aqce" class="add-btn-aqce">
+            <button
+              id="menu-aqce"
+              class="menu-btn-aqce"
+              style="display: block"
+              onclick="shmenu(1)"
+            >
+              <img src="img/sittings.png" class="menu-aqce menuroaqce" />
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div id="menubar-aqce">
+        <ul
+          id="list_menu_aqce"
+          class="list_menu_aqce"
+          style="visibility: hidden"
+        >
+          <li>
+            Language<br />
+            <select id="#">
+              <option value="EN">English</option>
+              <option value="AR">Arabic</option>
+              <option value="GER">German</option>
+            </select>
+          </li>
+          <li>
+            Theme<br />
+            <select id="#">
+              <option value="Disco">Disco</option>
+              <option value="Red_Ocean">Red_Ocean</option>
+              <option value="Deep_Space">Deep_Space</option>
+              <option value="Vice_City">Vice_City</option>
+              <option value="Royal">Royal</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <div class="main-aqce">
+        <section id="USE-aqce" class="sections-aqce" style="display: block">
+          <div class="section-title-aqce">
+            <h1 id="section_title1">USE</h1>
+          </div>
+          <article class="editor-aqce">
+            <div class="buttons-aqce">
+              <ul>
+                <li>
+                  <button class="use-btn-aqce" onclick="nEw();">
+                    <p>New</p>
+                  </button>
+                </li>
+                <li>
+                  <button class="use-btn-aqce" onclick="Ex(0,0);">
+                    <p>Save</p>
+                  </button>
+                  <div class="saves_aqce" id="saves_aqce" style="display: none">
+                    <button class="hisaves_aqce_btn_aqce" onclick="Ex(1,0);">
+                      <img
+                        src="img/close.png"
+                        class="startlogo_imgbtn_aqce"
+                      /></button
+                    ><br />
+                    Enter SiteName:
+                    <input
+                      type="text"
+                      id="save_name_aqce"
+                      class="save_name_aqce"
+                    />
+                    <br /><button
+                      class="use-btn-aqce save_fin_aqce"
+                      onclick="save();"
+                    >
+                      <p>Save</p>
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <button class="use-btn-aqce" onclick="Ex(0,1);">
+                    <p>Load</p>
+                  </button>
+                  <div class="loads_aqce" id="loads_aqce" style="display: none">
+                    <button class="hisaves_aqce_btn_aqce" onclick="Ex(0,2);">
+                      <img
+                        src="img/close.png"
+                        class="startlogo_imgbtn_aqce"
+                      /></button
+                    ><br />
+                    <select id="selece_load_aqce" class="selece_load_aqce">
+                      <option value="1" id="save1" class="save_aqce">-</option>
+                      <option value="2" id="save2" class="save_aqce">-</option>
+                      <option value="3" id="save3" class="save_aqce">-</option>
+                      <option value="4" id="save4" class="save_aqce">-</option>
+                      <option value="5" id="save5" class="save_aqce">-</option>
+                      <option value="6" id="save6" class="save_aqce">-</option>
+                      <option value="7" id="save7" class="save_aqce">-</option>
+                      <option value="8" id="save8" class="save_aqce">-</option>
+                      <option value="9" id="save9" class="save_aqce">-</option>
+                      <option value="10" id="save10" class="save_aqce">
+                        -
+                      </option>
+                    </select>
+                    <button
+                      class="use-btn-aqce save_fin_aqce"
+                      onclick="load();"
+                    >
+                      Load
+                    </button>
+                    <button
+                      class="use-btn-aqce save_fin_aqce"
+                      onclick="Delete_Save();"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <button class="use-btn-aqce" onclick="Delete();">
+                    <p>Delete</p>
+                  </button>
+                </li>
+                <li>
+                  <button class="use-btn-aqce" onclick="shResult_app();">
+                    <p id="Result-aqce">Result</p>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <textarea id="Writesite-aqce" class="Writesite-aqce"></textarea>
+          </article>
+        </section>
+        <section id="FAQ-aqce" class="sections-aqce" style="display: none">
+          <div class="section-title-aqce">
+            <h1 id="section_title2-aqce">FAQ</h1>
+          </div>
+          <article>
+            <table class="T_aqce">
+              <tr>
+                <th colspan="2" class="qT_aqce">How to use buttons?</th>
+              </tr>
+              <tr class="aT_aqce">
+                <th>Buttons</th>
+                <th>His job</th>
+              </tr>
+              <tr class="aT_aqce">
+                <td>
+                  <button class="use-btn-aqce">
+                    <p>New</p>
+                  </button>
+                </td>
+                <td>
+                  It adds the basic elements for writing websites in HTML, CSS,
+                  JS
+                </td>
+              </tr>
+              <tr class="aT_aqce">
+                <td>
+                  <button class="use-btn-aqce">
+                    <p>Save</p>
+                  </button>
+                </td>
+                <td>It opens the saves section</td>
+              </tr>
+              <tr class="aT_aqce">
+                <td>
+                  <button class="use-btn-aqce save_fin_aqce">
+                    <p>Save</p>
+                  </button>
+                </td>
+                <td>
+                  Currently our code editor supports 10 fields in which you can
+                  save your file<br />
+                  and work on designing more than one site together
+                </td>
+              </tr>
+              <tr class="aT_aqce">
+                <td>
+                  <button class="use-btn-aqce">
+                    <p>Load</p>
+                  </button>
+                </td>
+                <td>It opens the load section</td>
+              </tr>
+              <tr class="aT_aqce">
+                <td>
+                  <button class="use-btn-aqce save_fin_aqce">Load</button>
+                </td>
+                <td>
+                  You can add the files that you saved<br />
+                  according to the field you choose from among your saved files
+                </td>
+              </tr>
+              <tr class="aT_aqce">
+                <td>
+                  <button class="use-btn-aqce save_fin_aqce">Delete</button>
+                </td>
+                <td>It deletes the file you saved</td>
+              </tr>
+              <tr class="aT_aqce">
+                <td>
+                  <button class="use-btn-aqce">
+                    <p>Delete</p>
+                  </button>
+                </td>
+                <td>It deletes the writing area</td>
+              </tr>
+              <tr class="aT_aqce">
+                <td>
+                  <button class="use-btn-aqce">
+                    <p>Result</p>
+                  </button>
+                </td>
+                <td>Displays the result of your site</td>
+              </tr>
+              <tr>
+                <th colspan="2" class="qT_aqce">How to add image?</th>
+              </tr>
+              <tr>
+                <td colspan="2" class="aT_aqce">
+                  Currently, you can only add images by selecting an online
+                  images address
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2" class="qT_aqce">How to add audio and vedio?</th>
+              </tr>
+              <tr>
+                <td colspan="2" class="aT_aqce">
+                  Currently, you can only add audio and video by selecting an
+                  online audio or video address
+                </td>
+              </tr>
+              <tr>
+                <th class="qT_aqce">Notice!!</th>
+                <th class="aT_aqce">
+                  This is the first version<br />and in this version we have
+                  tried to create our own online code editor which is light and
+                  easy to use.<br />In upcoming releases, we are working on
+                  making it support more features<br />and enable you to use
+                  photos, audio and video files from your phone or computer.
+                </th>
+              </tr>
+            </table>
+          </article>
+        </section>
+        <section id="About-aqce" class="sections-aqce" style="display: none">
+          <div class="section-title-aqce">
+            <h1 id="section_title3-aqce">About</h1>
+          </div>
+          <div>
+            <div class="pC_aqce">
+              <img src="img/PAGE_Cover.png" class="img_pC_aqce" />
+            </div>
+            <div class="des_aqce">
+              <h2>
+                - Welcome <br />
+                - AQUARIUS , an information and technology company <br />
+                - Opened on April 1, 2022, by Eng. Alaa Qatfa <br />
+                - This company's goal is to help you learn programming and
+                design
+                <br />
+                - We are pleased with your visit, we wish you a good time and
+                lasting success in your life<br />
+              </h2>
+              <hr />
+              <ul class="list_about_aqce">
+                <li>
+                  <h3>- Contact us :</h3>
+                </li>
+                <li id="Co1">
+                  <a
+                    href="https://www.facebook.com/AQUARIUS2022410"
+                    target="_blank"
+                    ><img src="img/facebook.png" class="contact_aqce"
+                  /></a>
+                </li>
+                <li id="Co2">
+                  <a
+                    href="https://www.youtube.com/channel/UCZSSiLAUdyBpaq5ZuAZsOzQ/featured"
+                    target="_blank"
+                    ><img src="img/youtube.png" class="contact_aqce"
+                  /></a>
+                </li>
+              </ul>
+              <h3>
+                - You can share your problems and questions with us by joining
+                our official Facebook group Click
+                <a
+                  href="https://www.facebook.com/groups/541268943915913"
+                  target="_blank"
+                  style="color: darkred"
+                  >here</a
+                >
+              </h3>
+              <h3>
+                - You can visit our personal website to learn more about our
+                services and see our projects Click
+                <a
+                  href="https://aquarius.netlify.app"
+                  target="_blank"
+                  style="color: darkred"
+                  >here</a
+                >
+              </h3>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <main id="Result_app-aqce" style="display: none">
+      <div class="top_aqce">
+        <button class="back-aqce use-btn-aqce" onclick="GoBack();">
+          <p id="back-aqce">Back</p>
+        </button>
+        <span class="name_site_aqce">
+          SiteName:(<span id="name_site_aqce"></span>)
+        </span>
+      </div>
+      <div id="Res-aqce" class="Result_app_aqce"></div>
+    </main>
+    <script src="js/app.js"></script>
+    <script src="js/FAQ.js"></script>
+  </body>
+</html>
